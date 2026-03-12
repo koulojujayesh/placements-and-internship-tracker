@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Placement & Internship Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Placement & Internship Tracker</h1>
+
+    <div class="form">
+        <input type="text" id="company" placeholder="Company Name">
+        <input type="text" id="role" placeholder="Role">
+
+        <select id="type">
+            <option>Internship</option>
+            <option>Placement</option>
+        </select>
+
+        <select id="status">
+            <option>Applied</option>
+            <option>Interview</option>
+            <option>Rejected</option>
+            <option>Selected</option>
+        </select>
+
+        <button onclick="addApplication()">Add</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
